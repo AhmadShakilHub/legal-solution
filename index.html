@@ -22,10 +22,14 @@
 .font-garamond{
     font-family: 'EB Garamond', serif;
 }
+.banner-bg{
+    background-image: url(./images/banner.png), linear-gradient(180deg, #111 0%, rgba(17, 17, 17, 0.00) 100%);
+}
 </style>
 </head>
 <body>
     <header class="container mx-auto">
+        <!-- Navigation bar -->
         <nav>
             <div class="navbar flex justify-between bg-base-100">
                 <div class="navbar-start">
@@ -75,6 +79,22 @@
                   </div>
               </div>
         </nav>
+        <!-- Banner section  -->
+        <section class="my-24 banner-bg bg-center bg-cover rounded-xl text-center py-24">
+            <div class="pb-3">
+                <h2 class="text-7xl font-extrabold font-garamond text-white pb-6">
+                    We Provide Effective <br>
+                    Legal Solutions
+                </h2>
+                <p class="max-w-96 text-white opacity-85 pb-6 mx-auto">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+            </div>
+            <div class="flex flex-col gap-4 justify-center lg:flex-row">
+                <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-xs mx-auto lg:mx-0" />
+                <button class="btn bg-[#B68C5A] border-none px-6 mx-auto text-white lg:mx-0">Search</button>
+            </div>
+        </section>
     </header>
     <main>
 
